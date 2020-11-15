@@ -1,0 +1,46 @@
+.rit-logo {
+	height: 50px;
+	width: 325px;
+	margin: 0px auto;
+	display: block;
+	padding: 10px;
+}
+
+.interact {
+	background-color: whitesmoke;
+	margin: 10px auto;
+	display: block;
+	height: 75.5%;
+	width: 87%;
+}
+
+.button {
+	background-color: #e5a122;
+	border: none;
+	color: black;
+	padding: 12px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: Arial;
+	font-weight: bold;
+	margin: 7px 7px;
+	cursor: pointer;
+  }
+
+.btn {
+	background-color: #e5a122;
+	border: none;
+	color: black;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: pointer;
+	transform: translate(355%, -150%);
+  }
+
+
+img {
+	width: 100%;
+	height: auto;
+  }
