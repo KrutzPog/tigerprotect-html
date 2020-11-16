@@ -17,7 +17,35 @@
 			<p style="font-family:Arial; font-size: 20px" class="page_name">Daily Health Screen</p>
 			<!-- Area in which the user interacts -->
 			<div class="interact">
-            <p>FMS page</p>
+		<strong><p style="font-family:Arial; font-size: 15px">  Notify your Floor</p></strong>
+		<input type="text" id="textbox" name="message"><br><br>
+		<button id="button">Send</button> 
+    <div id="message"></div> 
+  
+    <script> 
+        var msg = document.getElementById("message"); 
+        var button = document.getElementById("button"); 
+        var textBox = document.getElementById("textbox"); 
+
+        button.addEventListener("click", function () { 
+            var str = textBox.value; 
+            console.log(str); 
+            msg.innerHTML = "<p>Message Sent!</p>"; 
+        }); 
+  
+        textBox.addEventListener("keypress", function (event) { 
+            if (event.keyCode == 13) { 
+                button.click(); 
+            } 
+        }); 
+    </script> 
+		 <strong><p style="font-family:Arial; font-size: 15px">  Need something fixed or repaired?</p></strong>
+
+		<div class="styled-select arrow"><select onchange="javascript:location.href = this.value;"><option selected="selected" value="">Select your option</option><option value="https://fastapps.rit.edu/facilities/project/work-order">Light Bulb or Fixture Out</option><option value="https://fastapps.rit.edu/facilities/project/work-order">Room Needs Cleaning</option><option value="https://fastapps.rit.edu/facilities/project/work-order">Heating/Cooling Controls</option><option value="https://fastapps.rit.edu/facilities/project/work-order">Clogged Drain or Toilet</option><option value="https://fastapps.rit.edu/facilities/project/work-order">Door Repair</option><option value="https://fastapps.rit.edu/facilities/project/work-order">See All Work Order Types &gt;&gt;</option><option value="line"></option><option selected="selected" value="">Services Provided by other Departments:</option><option value="https://www.rit.edu/its/device-requests">Projector Not Working</option><option value="http://www.rit.edu/fa/housing/content/submit-maintenance-request">Residence Hall Furniture, Microwave, TV or Laundry</option><option value="http://www.rit.edu/fa/housing/content/submit-maintenance-request">RIT Apartments, UC, Global Village or Greek Row</option><option value="https://www.rit.edu/ritinn/contact-us">Help at the RIT Inn</option><option value="https://www.rit.edu/its/requests">Internet/Network or Telephone Help</option><option value="https://www.rit.edu/its/resnet/live-tv-rit">Cable TV Service</option><option selected="selected" value="">Select your option</option></select></div>
+
+		 <strong><p style="font-family:Arial; font-size: 15px">  Start a Project Request</p></strong>
+
+		<div class="styled-select arrow"><select onchange="javascript:location.href = this.value;"><option selected="selected" value="">Select your option</option><option value="https://fastapps.rit.edu/facilities/project/">Move an Office or Furniture</option><option value="https://fastapps.rit.edu/facilities/key">Change a Lock or Key</option><option value="https://fastapps.rit.edu/facilities/sign">Signage/ Nametag Requests</option><option value="https://fastapps.rit.edu/facilities/shipping">Shipping-Requests</option><option value="https://fastapps.rit.edu/facilities/">See All Project Types &gt;&gt;</option><option value="line"></option><option selected="selected" value="">Services Provided by other Departments:</option><option value="https://www.rit.edu/its/device-requests">Projector Not Working</option><option value="http://www.rit.edu/fa/housing/content/submit-maintenance-request">Residence Hall Furniture, Microwave, TV or Laundry</option><option value="http://www.rit.edu/fa/housing/content/submit-maintenance-request">RIT Apartments, UC, Global Village or Greek Row</option><option value="https://www.rit.edu/ritinn/contact-us">Help at the RIT Inn</option><option value="https://www.rit.edu/its/requests">Internet/Network or Telephone Help</option><option value="https://www.rit.edu/its/resnet/live-tv-rit">Cable TV Service</option><option selected="selected" value="">Select your option</option></select></div>
             </div>
 		    <!-- Back Button -->
             <a href="home.html"><button class="btn"><i class="fa fa-close"></i> Back</button></a>
